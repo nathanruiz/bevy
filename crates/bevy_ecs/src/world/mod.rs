@@ -75,7 +75,7 @@ pub struct World {
     pub(crate) archetypes: Archetypes,
     pub(crate) storages: Storages,
     pub(crate) bundles: Bundles,
-    pub(crate) removed_components: SparseSet<ComponentId, Vec<Entity>>,
+    pub removed_components: SparseSet<ComponentId, Vec<Entity>>,
     /// Access cache used by [WorldCell].
     pub(crate) archetype_component_access: ArchetypeComponentAccess,
     main_thread_validator: MainThreadValidator,
